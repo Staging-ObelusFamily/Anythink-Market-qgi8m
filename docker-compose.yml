@@ -16,6 +16,7 @@ services:
       - DATABASE_URL=postgres://user:@postgres:5432
     depends_on:
       - "postgres"
+      - "eti"
 
   anythink-frontend:
     build: ./frontend
